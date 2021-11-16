@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  padding: 15px;
+  margin-left: 20px;
+}
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.faqs {
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+}
+.faqs .faq {
+  margin: 15px; 
+  padding: 15px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid #00A9A7;
+}
+.faqs .faq .faq-question {
+  position: relative;
+  font-size: 20px;
+  transition: all 0.4s ease;
+  display: flex;
+  
+}
+.faqs .faq .faq-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.4s ease;
+}
+.faqs .faq.open .faq-question {
+  margin-bottom: 15px;
+}
+.faqs .faq.open .faq-answer {
+  max-height: 1000px;
+  opacity: 1;
+}
+.faqs .faq-number {
+  font-size: 30px;
+  background: linear-gradient(180deg, #00A9A7 0%, #00BA89 100%);
+  color: white;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin-right: 15px;
+}
+p {
+  padding: 5px;
+}
